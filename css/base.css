@@ -3,7 +3,6 @@
 }
 body {
   background: rgba(0, 0, 0, 0.1);
-  color: #fff;
 }
 .container {
   max-width: 900px;
@@ -20,7 +19,8 @@ input,
 .task-item,
 button,
 .task-detail-mask,
-textarea {
+textarea,
+.task-detail {
   border-radius: 3px;
   padding: 10px;
 }
@@ -101,6 +101,7 @@ button {
   margin-left: 10px;
 }
 .task-detail-mask {
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -120,6 +121,7 @@ button {
   box-sizing: border-box;
   bottom: 0;
   right: 0;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .task-detail input[type="date"] {
   color: #333;
